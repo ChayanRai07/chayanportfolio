@@ -1,0 +1,264 @@
+.experience-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ec4899, #8b5cf6);
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100%;
+}
+
+.experience-card {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.7), rgba(17, 24, 39, 0.8));
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(139, 92, 246, 0.05),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.experience-card:hover::before {
+  transform: translateX(100%);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.9));
+}
+
+.experience-card ul li {
+  position: relative;
+  padding-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.experience-card ul li::before {
+  content: "";
+  color: #ec4899;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.experience-card ul li:hover::before {
+  color: #8b5cf6;
+  transform: scale(1.2);
+}
+
+.duration-badge {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.duration-badge:hover {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1rem;
+  }
+  
+  .experience-card {
+    padding: 1.5rem;
+  }
+}
+
+.card-highlighted {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95)) !important;
+  border-color: rgba(139, 92, 246, 0.5) !important;
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2) !important;
+}
+
+.highlight-title {
+  background-image: linear-gradient(to right, #f472b6, #c084fc) !important;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.highlight-point {
+  color: #f3f4f6 !important;
+  transform: translateX(5px);
+  position: relative;
+}
+
+.highlight-point::before {
+  color: #f472b6 !important;
+  transform: scale(1.2);
+}
+
+.highlight-duration {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(139, 92, 246, 0.3));
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+}
+
+.experience-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-card ul li {
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-card h3,
+.experience-card p,
+.experience-card span {
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(139, 92, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+  }
+}
+
+.card-highlighted {
+  animation: pulse 2s infinite;
+}
+
+.highlight-point {
+  position: relative;
+}
+
+.highlight-point::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  background: linear-gradient(to right, #f472b6, #c084fc);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.card-highlighted .highlight-point::after {
+  transform: scaleX(1);
+}
+
+.highlight-keyword {
+  background: linear-gradient(120deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));
+  color: #f3f4f6;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  margin: 0 0.2em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-card:hover .highlight-keyword {
+  background: linear-gradient(120deg, rgba(236, 72, 153, 0.3), rgba(139, 92, 246, 0.3));
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+}
+
+.highlight-keyword::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ec4899, #8b5cf6);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover .highlight-keyword::after {
+  transform: scaleX(1);
+}
+
+.highlight-keyword:hover {
+  background: linear-gradient(120deg, rgba(236, 72, 153, 0.4), rgba(139, 92, 246, 0.4));
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3) !important;
+} 

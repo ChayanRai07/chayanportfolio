@@ -1,0 +1,158 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 7vw 0px 15vw;
+    padding-top: 20px;
+    gap: 2px;
+}
+
+/* Larger screen layout */
+@media screen and (min-width: 925px) {
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 80px 13vw 0 18vw;
+        padding-top: 100px;
+    }
+}
+
+.name {
+    background: linear-gradient(to right, #ec4899, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.profile-photo {
+    margin-top: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.profile-photo .heading {
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ec4899, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.profile-photo .img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.about-container .name {
+    line-height: 85px;
+    position: absolute;
+    right: 6.5vw;
+    padding-top: 75px;
+    width: 110px;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: 'Intro', sans-serif;
+    font-weight: 800;
+    z-index: 0;
+}
+
+.aboutMe-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    max-width: 600px;
+}
+
+
+.aboutMe-text h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;                                                                                                                                            
+}
+
+.aboutMe-text .resume {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    transition: all 0.3s ease-in-out;
+    font-weight: 800;
+    background: linear-gradient(to right, #ec4899, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutMe-text .resume:hover {
+    transform: scale(1.05);
+    color: #0056b3;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1150px) {
+    .aboutMe-text {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 80px;
+        width: 80px;
+        line-height: 70px;
+        right: 8vw;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading,
+    .name {
+        display: none;
+    }
+
+    .aboutMe-text {
+        text-align: center;
+    }
+
+    .profile-photo .img {
+        display: block;
+        margin-top: 20px;
+        max-width: 400px;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-container {
+        margin: 0 9vw;
+        padding-top: 70px;
+    }
+}
+
+span {
+    background: linear-gradient(to right, #ec4899, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.resume {
+    background: linear-gradient(to right, #ec4899, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.resume:hover {
+    opacity: 0.8;
+}
