@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eda7059c.css",
+    "main.js": "/static/js/main.9849ab46.js",
+    "static/media/cartoon-compressed.png": "/static/media/cartoon-compressed.d276ce65a9ba2e7b264a.png",
+    "static/media/chayan's-pic.png": "/static/media/chayan's-pic.8d2a20c00e4fee4033d5.png",
+    "static/media/ContactApp.jpg": "/static/media/ContactApp.a06a62eb6e03ce7d7413.jpg",
+    "static/media/WeatherApp.jpg": "/static/media/WeatherApp.bc43a1608c6f91f363c0.jpg",
+    "index.html": "/index.html",
+    "main.eda7059c.css.map": "/static/css/main.eda7059c.css.map",
+    "main.9849ab46.js.map": "/static/js/main.9849ab46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eda7059c.css",
+    "static/js/main.9849ab46.js"
+  ]
+}
