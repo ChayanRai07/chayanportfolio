@@ -60,7 +60,7 @@ export default function HomeBanner({ id }) {
           </ul>
           <span className="links flex gap-2.5 mt-4 sm:mt-0">
             <a className="btn bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:opacity-80 hover:scale-105 transition-transform" href="https://www.linkedin.com/in/chayan-rai-87b95222a/" target="_blank" rel="noopener noreferrer">Hire Me</a>
-            <a className="btn bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:opacity-80 hover:scale-120 transition-transform" href="https://drive.google.com/file/d/1kwbDEjXAfLHLo-7QEAJBmQxmIKTTwBnI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a className="btn bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:opacity-80 hover:scale-120 transition-transform" href="https://drive.google.com/file/d/12eubbsb5fDu2KBQ8dkuHiBlfakLxT5cc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </span>
         </div>
       </div>
