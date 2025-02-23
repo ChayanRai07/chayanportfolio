@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/chayanportfolio/static/css/main.5ffaab84.css",
-    "main.js": "/chayanportfolio/static/js/main.293ce8be.js",
+    "main.js": "/chayanportfolio/static/js/main.06d2ed1c.js",
     "static/media/cartoon-compressed.png": "/chayanportfolio/static/media/cartoon-compressed.d276ce65a9ba2e7b264a.png",
     "static/media/chayan's-pic.png": "/chayanportfolio/static/media/chayan's-pic.8d2a20c00e4fee4033d5.png",
     "static/media/ContactApp.jpg": "/chayanportfolio/static/media/ContactApp.a06a62eb6e03ce7d7413.jpg",
     "static/media/WeatherApp.jpg": "/chayanportfolio/static/media/WeatherApp.bc43a1608c6f91f363c0.jpg",
     "index.html": "/chayanportfolio/index.html",
     "main.5ffaab84.css.map": "/chayanportfolio/static/css/main.5ffaab84.css.map",
-    "main.293ce8be.js.map": "/chayanportfolio/static/js/main.293ce8be.js.map"
+    "main.06d2ed1c.js.map": "/chayanportfolio/static/js/main.06d2ed1c.js.map"
   },
   "entrypoints": [
     "static/css/main.5ffaab84.css",
-    "static/js/main.293ce8be.js"
+    "static/js/main.06d2ed1c.js"
   ]
 }
