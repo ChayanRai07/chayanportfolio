@@ -19,7 +19,7 @@ export default function AboutMe({ id }) {
           These passions keep my mind and body in sync, fueling my creative journey. 
           <br></br>
           <br></br>
-          Feel free to <a className='resume' href="https://drive.google.com/file/d/1kwbDEjXAfLHLo-7QEAJBmQxmIKTTwBnI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">explore my resume.</a>
+          Feel free to <a className='resume' href="https://drive.google.com/file/d/1RH-GKYokj-XJY_2zHCjdCgladjzTqoTu/view?usp=sharing" target="_blank" rel="noopener noreferrer">explore my resume.</a>
         </div>
         <div className="profile-photo">
           <div className="heading"> About Me</div>
